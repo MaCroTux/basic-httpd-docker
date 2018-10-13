@@ -1,0 +1,9 @@
+#!/bin/sh
+
+docker  run 																																	 \
+	--rm 																																				 \
+	-dit 																																				 \
+	--name basic-apache2-docker 																							 \
+	-p 8080:80 																																	 \
+	-v "$PWD"/www-data:/usr/local/apache2/htdocs/ 																				 \
+	httpd:2.4

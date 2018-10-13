@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker stop basic-apache2-docker
